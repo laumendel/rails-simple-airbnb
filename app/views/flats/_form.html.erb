@@ -1,0 +1,12 @@
+<h2>Add a new flat</h2>
+<div class="container d-flex">
+<%= simple_form_for flat do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <button class="btn btn-primary"><%= f.submit %></button>
+  <button class="btn btn-danger">Cancel</button>
+<% end %>
+</div>
